@@ -18,7 +18,7 @@ git clone https://github.com/Malone-Design-Team/malone-swift-app
 
 Otherwise, if you want something with a graphical interface, I recommend using something like [Github Desktop](https://desktop.github.com) (free), or even a third party client like [GitKraken](https://www.gitkraken.com) (free w/ paid upgrade) or [Gitfox](https://www.gitfox.app) (paid). The method to clone the repository varies with each client, so consult the guide for the client you choose. 
 
-Github Desktop has extensive documentation on [their website](https://docs.github.com/en/desktop)
+Github Desktop has extensive documentation on [their website](https://docs.github.com/en/desktop).
 
 Note: Xcode does have built-in Git cloning support, but it is very simplified and as such is **not recommended** for use with this repository.
 
