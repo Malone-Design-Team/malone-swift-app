@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  malone-swift-app
 //
-//  Created by Carter Brehm on 2/17/22.
+// 
 //
 
 import UIKit
