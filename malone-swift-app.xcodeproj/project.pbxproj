@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		AD47586627BF211B00268113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47586527BF211B00268113 /* AppDelegate.swift */; };
 		AD47586827BF211B00268113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47586727BF211B00268113 /* SceneDelegate.swift */; };
-		AD47586A27BF211B00268113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47586927BF211B00268113 /* ViewController.swift */; };
 		AD47586D27BF211B00268113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD47586B27BF211B00268113 /* Main.storyboard */; };
 		AD47586F27BF211C00268113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD47586E27BF211C00268113 /* Assets.xcassets */; };
 		AD47587227BF211C00268113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD47587027BF211C00268113 /* LaunchScreen.storyboard */; };
+		AD4873CD27D93B23005EF814 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CC27D93B23005EF814 /* TabViewController.swift */; };
+		AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD47586227BF211B00268113 /* malone-swift-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "malone-swift-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD47586527BF211B00268113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD47586727BF211B00268113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD47586927BF211B00268113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD47586C27BF211B00268113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD47586E27BF211C00268113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD47587127BF211C00268113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD47587327BF211C00268113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4873CC27D93B23005EF814 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +44,9 @@
 			children = (
 				AD47586527BF211B00268113 /* AppDelegate.swift */,
 				AD47586727BF211B00268113 /* SceneDelegate.swift */,
-				AD47586927BF211B00268113 /* ViewController.swift */,
 				AD47586B27BF211B00268113 /* Main.storyboard */,
+				AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */,
+				AD4873CC27D93B23005EF814 /* TabViewController.swift */,
 				AD47586E27BF211C00268113 /* Assets.xcassets */,
 				AD47587027BF211C00268113 /* LaunchScreen.storyboard */,
 				AD47587327BF211C00268113 /* Info.plist */,
@@ -130,9 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD47586A27BF211B00268113 /* ViewController.swift in Sources */,
+				AD4873CD27D93B23005EF814 /* TabViewController.swift in Sources */,
 				AD47586627BF211B00268113 /* AppDelegate.swift in Sources */,
 				AD47586827BF211B00268113 /* SceneDelegate.swift in Sources */,
+				AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

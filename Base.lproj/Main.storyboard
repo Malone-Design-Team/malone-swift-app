@@ -31,26 +31,45 @@
         <!--Home-->
         <scene sceneID="Aro-S0-D2o">
             <objects>
-                <viewController title="Home" id="PRR-eW-lRN" sceneMemberID="viewController">
+                <viewController title="Home" id="PRR-eW-lRN" customClass="HomeTabViewController" customModule="malone_swift_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9IZ-BK-rgl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" customUserAgent="MaloneApp" translatesAutoresizingMaskIntoConstraints="NO" id="5Wr-PZ-BND">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gwz-ht-6N9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gwz-ht-6N9" firstAttribute="bottom" secondItem="5Wr-PZ-BND" secondAttribute="bottom" id="KB7-Me-Q8m"/>
+                            <constraint firstItem="gwz-ht-6N9" firstAttribute="trailing" secondItem="5Wr-PZ-BND" secondAttribute="trailing" id="OxQ-Se-3w1"/>
+                            <constraint firstItem="5Wr-PZ-BND" firstAttribute="leading" secondItem="gwz-ht-6N9" secondAttribute="leading" id="R8j-6I-wjp"/>
+                            <constraint firstItem="5Wr-PZ-BND" firstAttribute="top" secondItem="gwz-ht-6N9" secondAttribute="top" id="SKE-aS-fEc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="mM8-Ah-QKr">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                         <imageReference key="selectedImage" image="house" catalog="system" symbolScale="default"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="webView" destination="5Wr-PZ-BND" id="qlQ-wr-e0j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KgI-1p-iXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="569" y="-481"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="reg-vA-s8z">
             <objects>
-                <tabBarController id="LlM-GG-IOg" sceneMemberID="viewController">
+                <tabBarController id="LlM-GG-IOg" customClass="TabViewController" customModule="malone_swift_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0jF-hk-5Xh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
