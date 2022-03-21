@@ -8,19 +8,38 @@
 import UIKit
 import WebKit
 
-class HomeTabViewController: UIViewController {
+class HomeTabViewController: UIViewController, WKUIDelegate {
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var progressView: UIProgressView!
+    private var observation: NSKeyValueObservation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         
         let request = URLRequest(url: URL(string: "https://malonecenter.org")!)
+        webView.uiDelegate = self
         webView?.load(request)
+        
+        
         
         
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let frame = navigationAction.targetFrame,
+            frame.isMainFrame {
+            return nil
+        }
+        webView.load(navigationAction.request)
+        return nil
+    }
+    
     
     
     
@@ -39,3 +58,5 @@ class HomeTabViewController: UIViewController {
     */
 
 }
+
+
