@@ -10,7 +10,6 @@ import WebKit
 
 class HomeTabViewController: UIViewController, WKUIDelegate {
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var progressView: UIProgressView!
     private var observation: NSKeyValueObservation?
     
     override func viewDidLoad() {
