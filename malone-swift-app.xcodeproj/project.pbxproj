@@ -14,6 +14,7 @@
 		AD47587227BF211C00268113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD47587027BF211C00268113 /* LaunchScreen.storyboard */; };
 		AD4873CD27D93B23005EF814 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CC27D93B23005EF814 /* TabViewController.swift */; };
 		AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */; };
+		F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AD47587327BF211C00268113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4873CC27D93B23005EF814 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 				AD47586727BF211B00268113 /* SceneDelegate.swift */,
 				AD47586B27BF211B00268113 /* Main.storyboard */,
 				AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */,
+				F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */,
 				AD4873CC27D93B23005EF814 /* TabViewController.swift */,
 				AD47586E27BF211C00268113 /* Assets.xcassets */,
 				AD47587027BF211C00268113 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 				AD47586627BF211B00268113 /* AppDelegate.swift in Sources */,
 				AD47586827BF211B00268113 /* SceneDelegate.swift in Sources */,
 				AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */,
+				F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
