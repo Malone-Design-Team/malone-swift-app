@@ -7,7 +7,8 @@
 
 import UIKit
 
-class CurriculumViewController: UIViewController {
+class CurriculumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +26,12 @@ class CurriculumViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }
