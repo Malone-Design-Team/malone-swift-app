@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CurriculumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CurriculumViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     override func viewDidLoad() {
