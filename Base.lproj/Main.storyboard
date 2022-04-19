@@ -106,19 +106,50 @@
                     </tabBar>
                     <connections>
                         <segue destination="PRR-eW-lRN" kind="relationship" relationship="viewControllers" id="e0b-nU-ciG"/>
-                        <segue destination="gn5-fl-a7E" kind="relationship" relationship="viewControllers" id="XZp-6U-sEL"/>
                         <segue destination="cus-DA-5cO" kind="relationship" relationship="viewControllers" id="wYZ-96-2Jf"/>
+                        <segue destination="bpB-Ov-kkN" kind="relationship" relationship="viewControllers" id="MdI-u2-Y3n"/>
+                        <segue destination="gn5-fl-a7E" kind="relationship" relationship="viewControllers" id="XZp-6U-sEL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHN-Na-cRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-321" y="-178"/>
         </scene>
+        <!--Messages-->
+        <scene sceneID="Cvj-4P-JZs">
+            <objects>
+                <tableViewController title="Messages" id="bpB-Ov-kkN" customClass="MessagesViewController" customModule="malone_swift_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="39P-KX-7Vy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Z41-b6-0lF">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z41-b6-0lF" id="ZY9-KG-v6t">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bpB-Ov-kkN" id="aNm-N1-IOJ"/>
+                            <outlet property="delegate" destination="bpB-Ov-kkN" id="eMJ-Qb-hG0"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Messages" image="megaphone" catalog="system" id="Txk-w0-p6W"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0e6-IQ-uBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-664"/>
+        </scene>
     </scenes>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="megaphone" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
