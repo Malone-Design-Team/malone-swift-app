@@ -74,6 +74,10 @@ class MessagesViewController: UITableViewController {
 
          let announcement = announcements[indexPath.row]
          cell.textLabel?.text = announcement.title
+         cell.detailTextLabel?.text = announcement.body
+         cell.detailTextLabel?.lineBreakMode = .byWordWrapping
+         cell.detailTextLabel?.numberOfLines = 0
+         
 
              return cell
          }
