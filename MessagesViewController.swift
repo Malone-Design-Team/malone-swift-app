@@ -9,7 +9,7 @@ import UIKit
 
 class MessagesViewController: UITableViewController {
 
-    var announcements = [Announcement]()
+    var announcements: AnnouncementsObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class MessagesViewController: UITableViewController {
     }
     
     private func fetchPosts() {
-        guard let url = URL(string: "https://api.carters.cloud/announcements") else {
+        guard let url = URL(string: "https://malone.carters.cloud/ghost/api/v3/content/posts?key=9a559148799180975f4a5d4e58&fields=id,title,published_at,url,custom_excerpt") else {
             print("Failed to create a URL from the string.")
             return
         }
@@ -39,13 +39,12 @@ class MessagesViewController: UITableViewController {
                 print("No data")
                 return
             }
-
             let decoder = JSONDecoder()
 
             do {
-                self?.announcements = try decoder.decode([Announcement].self, from: data)
+                self!.announcements = try decoder.decode(AnnouncementsObject.self, from: data)
             } catch {
-                print("Failed to decode data: \(error.localizedDescription)")
+                print("Failed to decode data: \(error)")
             }
 
             DispatchQueue.main.async {
@@ -65,16 +64,18 @@ class MessagesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return announcements.count
+        return announcements?.posts.count ?? 0
         }
 
 
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
 
-         let announcement = announcements[indexPath.row]
+         let announcement = announcements!.posts[indexPath.row]
          cell.textLabel?.text = announcement.title
-         cell.detailTextLabel?.text = announcement.body
+         cell.textLabel?.lineBreakMode = .byWordWrapping
+         cell.textLabel?.numberOfLines = 0
+         cell.detailTextLabel?.text = announcement.custom_excerpt
          cell.detailTextLabel?.lineBreakMode = .byWordWrapping
          cell.detailTextLabel?.numberOfLines = 0
          
