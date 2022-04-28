@@ -25,6 +25,17 @@ class MessagesViewController: UITableViewController {
     }
     
     private func fetchPosts() {
+        
+        let defaults = UserDefaults.standard
+        if let data = defaults.object(forKey: "SavedAnnouncements") as? Data {
+            do {
+                let decoder = JSONDecoder()
+                self.announcements = try decoder.decode(AnnouncementsObject.self, from: data)
+            } catch {
+                print("Failed to decode data: \(error)")
+            }
+        }
+        
         guard let url = URL(string: "https://malone.carters.cloud/ghost/api/v3/content/posts?key=9a559148799180975f4a5d4e58&fields=id,title,published_at,url,custom_excerpt") else {
             print("Failed to create a URL from the string.")
             return
@@ -50,6 +61,8 @@ class MessagesViewController: UITableViewController {
 
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
+                let defaults = UserDefaults.standard
+                defaults.set(data, forKey: "SavedAnnouncements")
             }
         }
 
