@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MessagesViewController: UITableViewController {
 
@@ -66,6 +67,16 @@ class MessagesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return announcements?.posts.count ?? 0
         }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let url = URL(string: (announcements?.posts[indexPath.row].url)!) {
+                let config = SFSafariViewController.Configuration()
+                config.barCollapsingEnabled = true
+
+                let vc = SFSafariViewController(url: url, configuration: config)
+                present(vc, animated: true)
+            }
+    }
 
 
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
