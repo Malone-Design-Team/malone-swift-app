@@ -9,24 +9,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Contact-->
         <scene sceneID="cje-NO-ifa">
             <objects>
-                <viewController id="gn5-fl-a7E" sceneMemberID="viewController">
+                <viewController id="gn5-fl-a7E" customClass="SettingsViewController" customModule="malone_swift_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N07-pM-8L7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ump-90-tyP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="739"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s4b-Ka-I1A">
+                                        <rect key="frame" x="30" y="0.0" width="354" height="363.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="s4b-Ka-I1A" secondAttribute="height" multiplier="187:192" id="27j-Q3-5WR"/>
+                                        </constraints>
+                                    </mapView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOP-oS-Xi3">
+                                        <rect key="frame" x="30" y="413.5" width="354" height="86"/>
+                                        <string key="text">Malone is a nonprofit organization dedicated to creating unity and prosperity throughout Lincoln, Nebraska while honoring African American heritage.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtD-Rh-zTv">
+                                        <rect key="frame" x="133.5" y="549.5" width="147" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nRk-wV-uer"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="📞 (402) 474-1110"/>
+                                        <connections>
+                                            <action selector="phoneButtonClicked:" destination="gn5-fl-a7E" eventType="touchUpInside" id="6wl-bN-XXl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pn-s0-rRF">
+                                        <rect key="frame" x="74" y="699" width="266.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="15f-PM-Wgb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="📍 2032 U Street, Lincoln, NE 68503"/>
+                                        <connections>
+                                            <action selector="mapButtonClicked:" destination="gn5-fl-a7E" eventType="touchUpInside" id="pns-vW-vqz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Pn-s0-rRF" firstAttribute="top" secondItem="KtD-Rh-zTv" secondAttribute="bottom" constant="30" id="7pd-Ze-XxX"/>
+                                    <constraint firstItem="xOP-oS-Xi3" firstAttribute="leading" secondItem="Ump-90-tyP" secondAttribute="leading" constant="30" id="Ijr-Lb-m39"/>
+                                    <constraint firstItem="s4b-Ka-I1A" firstAttribute="leading" secondItem="Ump-90-tyP" secondAttribute="leading" constant="30" id="K77-6s-Rpc"/>
+                                    <constraint firstAttribute="trailing" secondItem="s4b-Ka-I1A" secondAttribute="trailing" constant="30" id="Q8O-nl-QSm"/>
+                                    <constraint firstAttribute="trailing" secondItem="xOP-oS-Xi3" secondAttribute="trailing" constant="30" id="QR4-G0-UlR"/>
+                                    <constraint firstItem="KtD-Rh-zTv" firstAttribute="top" secondItem="xOP-oS-Xi3" secondAttribute="bottom" constant="50" id="XUE-dV-eeP"/>
+                                    <constraint firstItem="xOP-oS-Xi3" firstAttribute="top" secondItem="s4b-Ka-I1A" secondAttribute="bottom" constant="30" id="cbQ-4I-LTY"/>
+                                    <constraint firstItem="KtD-Rh-zTv" firstAttribute="centerX" secondItem="Ump-90-tyP" secondAttribute="centerX" id="frI-iN-Gct"/>
+                                    <constraint firstItem="s4b-Ka-I1A" firstAttribute="top" secondItem="Ump-90-tyP" secondAttribute="top" constant="30" id="oy8-v5-hWn"/>
+                                    <constraint firstItem="0Pn-s0-rRF" firstAttribute="centerX" secondItem="Ump-90-tyP" secondAttribute="centerX" id="xg8-xu-Wq8"/>
+                                    <constraint firstItem="s4b-Ka-I1A" firstAttribute="centerX" secondItem="Ump-90-tyP" secondAttribute="centerX" id="zFK-u8-FL8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="25R-Z9-qxZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="25R-Z9-qxZ" firstAttribute="bottom" secondItem="Ump-90-tyP" secondAttribute="bottom" constant="30" id="3eQ-QM-6hU"/>
+                            <constraint firstItem="Ump-90-tyP" firstAttribute="leading" secondItem="25R-Z9-qxZ" secondAttribute="leading" id="BP9-PI-9vJ"/>
+                            <constraint firstItem="25R-Z9-qxZ" firstAttribute="trailing" secondItem="Ump-90-tyP" secondAttribute="trailing" id="FGv-a7-dg8"/>
+                            <constraint firstItem="Ump-90-tyP" firstAttribute="top" secondItem="25R-Z9-qxZ" secondAttribute="top" id="ake-xX-7CL"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="L5K-eI-hql">
-                        <imageReference key="image" image="gear" catalog="system" symbolScale="default"/>
-                        <imageReference key="selectedImage" image="gear" catalog="system" symbolScale="default"/>
+                    <tabBarItem key="tabBarItem" title="Contact" id="L5K-eI-hql">
+                        <imageReference key="image" image="person.2" catalog="system" symbolScale="default"/>
+                        <imageReference key="selectedImage" image="person.2" catalog="system" symbolScale="default"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="mapButton" destination="0Pn-s0-rRF" id="gh0-hd-rs5"/>
+                        <outlet property="mapView" destination="s4b-Ka-I1A" id="g5i-xc-9SB"/>
+                        <outlet property="phoneButton" destination="KtD-Rh-zTv" id="GCe-CI-5aI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KeL-Ne-jYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="125"/>
+            <point key="canvasLocation" x="568.1159420289855" y="124.55357142857142"/>
         </scene>
         <!--Curriculum-->
         <scene sceneID="zbZ-wt-WOg">
@@ -169,6 +235,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Messages" image="megaphone" catalog="system" id="Txk-w0-p6W"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fpk-sI-wKB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0e6-IQ-uBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,9 +246,9 @@
     </scenes>
     <resources>
         <image name="doc.append" catalog="system" width="115" height="128"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="megaphone" catalog="system" width="128" height="111"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

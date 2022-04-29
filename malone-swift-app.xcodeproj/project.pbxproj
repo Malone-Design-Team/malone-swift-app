@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD411A4C281B65C800890B48 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD411A4B281B65C700890B48 /* SettingsViewController.swift */; };
 		AD47586627BF211B00268113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47586527BF211B00268113 /* AppDelegate.swift */; };
 		AD47586827BF211B00268113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD47586727BF211B00268113 /* SceneDelegate.swift */; };
 		AD47586D27BF211B00268113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD47586B27BF211B00268113 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD411A4B281B65C700890B48 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AD47586227BF211B00268113 /* malone-swift-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "malone-swift-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD47586527BF211B00268113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD47586727BF211B00268113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				AD47586527BF211B00268113 /* AppDelegate.swift */,
 				AD47586727BF211B00268113 /* SceneDelegate.swift */,
 				AD47586B27BF211B00268113 /* Main.storyboard */,
+				AD411A4B281B65C700890B48 /* SettingsViewController.swift */,
 				AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */,
 				AD94291E280F834500E21DB1 /* Announcements.swift */,
 				AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */,
@@ -149,6 +152,7 @@
 				AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */,
 				F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */,
 				AD94291F280F834500E21DB1 /* Announcements.swift in Sources */,
+				AD411A4C281B65C800890B48 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

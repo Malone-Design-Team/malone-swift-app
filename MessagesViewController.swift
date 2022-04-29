@@ -12,8 +12,13 @@ class MessagesViewController: UITableViewController {
 
     var announcements: AnnouncementsObject?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(swipeRefresh), for: .valueChanged)
+        self.refreshControl = refreshControl
         fetchPosts()
         self.title = "Announcements"
 
@@ -23,6 +28,13 @@ class MessagesViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    @objc private func swipeRefresh(refreshControl: UIRefreshControl) {
+        fetchPosts()
+        refreshControl.endRefreshing()
+    }
+    
+    
     
     private func fetchPosts() {
         
