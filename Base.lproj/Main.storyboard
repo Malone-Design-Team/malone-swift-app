@@ -297,8 +297,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iAu-u3-O7A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" image="megaphone" catalog="system" id="Txk-w0-p6W"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ocA-8b-IJE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ocA-8b-IJE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
