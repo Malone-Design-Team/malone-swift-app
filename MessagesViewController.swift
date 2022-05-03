@@ -16,6 +16,7 @@ class MessagesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.title = "Announcements"
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(swipeRefresh), for: .valueChanged)
         self.refreshControl = refreshControl

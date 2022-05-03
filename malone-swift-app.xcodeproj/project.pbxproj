@@ -17,8 +17,13 @@
 		AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */; };
 		AD94291D280F7DAE00E21DB1 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */; };
 		AD94291F280F834500E21DB1 /* Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94291E280F834500E21DB1 /* Announcements.swift */; };
+		ADD8C2042821BC220004A863 /* Cancer Prevention Tips.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADD8C2002821BC220004A863 /* Cancer Prevention Tips.pdf */; };
+		ADD8C2052821BC220004A863 /* Covid Testing Sites.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADD8C2012821BC220004A863 /* Covid Testing Sites.pdf */; };
+		ADD8C2062821BC220004A863 /* National Cancer Prevention Month.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADD8C2022821BC220004A863 /* National Cancer Prevention Month.pdf */; };
+		ADD8C2072821BC220004A863 /* Tips for a Healthy Pregnancy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADD8C2032821BC220004A863 /* Tips for a Healthy Pregnancy.pdf */; };
 		ADFDEF462820D9B200150960 /* Black Maternal Health Crisis Info.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */; };
 		ADFDEF472820D9B200150960 /* Prison Incarceration Statistics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */; };
+		ADFDEF4928210F2100150960 /* CurriculumDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDEF4828210F2100150960 /* CurriculumDocumentViewController.swift */; };
 		F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +40,13 @@
 		AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		AD94291E280F834500E21DB1 /* Announcements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcements.swift; sourceTree = "<group>"; };
+		ADD8C2002821BC220004A863 /* Cancer Prevention Tips.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cancer Prevention Tips.pdf"; sourceTree = "<group>"; };
+		ADD8C2012821BC220004A863 /* Covid Testing Sites.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Covid Testing Sites.pdf"; sourceTree = "<group>"; };
+		ADD8C2022821BC220004A863 /* National Cancer Prevention Month.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "National Cancer Prevention Month.pdf"; sourceTree = "<group>"; };
+		ADD8C2032821BC220004A863 /* Tips for a Healthy Pregnancy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Tips for a Healthy Pregnancy.pdf"; sourceTree = "<group>"; };
 		ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Black Maternal Health Crisis Info.pdf"; sourceTree = "<group>"; };
 		ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prison Incarceration Statistics.pdf"; sourceTree = "<group>"; };
+		ADFDEF4828210F2100150960 /* CurriculumDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumDocumentViewController.swift; sourceTree = "<group>"; };
 		F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +68,7 @@
 				AD47586527BF211B00268113 /* AppDelegate.swift */,
 				AD47586727BF211B00268113 /* SceneDelegate.swift */,
 				AD47586B27BF211B00268113 /* Main.storyboard */,
+				ADFDEF4828210F2100150960 /* CurriculumDocumentViewController.swift */,
 				AD411A4B281B65C700890B48 /* SettingsViewController.swift */,
 				AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */,
 				AD94291E280F834500E21DB1 /* Announcements.swift */,
@@ -82,6 +93,10 @@
 		ADD4558A281C4C8300B1A5B4 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				ADD8C2002821BC220004A863 /* Cancer Prevention Tips.pdf */,
+				ADD8C2012821BC220004A863 /* Covid Testing Sites.pdf */,
+				ADD8C2022821BC220004A863 /* National Cancer Prevention Month.pdf */,
+				ADD8C2032821BC220004A863 /* Tips for a Healthy Pregnancy.pdf */,
 				ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */,
 				ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */,
 			);
@@ -149,7 +164,11 @@
 				ADFDEF472820D9B200150960 /* Prison Incarceration Statistics.pdf in Resources */,
 				AD47587227BF211C00268113 /* LaunchScreen.storyboard in Resources */,
 				ADFDEF462820D9B200150960 /* Black Maternal Health Crisis Info.pdf in Resources */,
+				ADD8C2052821BC220004A863 /* Covid Testing Sites.pdf in Resources */,
 				AD47586F27BF211C00268113 /* Assets.xcassets in Resources */,
+				ADD8C2042821BC220004A863 /* Cancer Prevention Tips.pdf in Resources */,
+				ADD8C2062821BC220004A863 /* National Cancer Prevention Month.pdf in Resources */,
+				ADD8C2072821BC220004A863 /* Tips for a Healthy Pregnancy.pdf in Resources */,
 				AD47586D27BF211B00268113 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +188,7 @@
 				F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */,
 				AD94291F280F834500E21DB1 /* Announcements.swift in Sources */,
 				AD411A4C281B65C800890B48 /* SettingsViewController.swift in Sources */,
+				ADFDEF4928210F2100150960 /* CurriculumDocumentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
