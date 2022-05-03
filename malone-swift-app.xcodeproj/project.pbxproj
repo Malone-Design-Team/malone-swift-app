@@ -17,6 +17,8 @@
 		AD4873CF27D93B9D005EF814 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */; };
 		AD94291D280F7DAE00E21DB1 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */; };
 		AD94291F280F834500E21DB1 /* Announcements.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94291E280F834500E21DB1 /* Announcements.swift */; };
+		ADFDEF462820D9B200150960 /* Black Maternal Health Crisis Info.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */; };
+		ADFDEF472820D9B200150960 /* Prison Incarceration Statistics.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */; };
 		F95ADBE32803AF1400D3D07A /* CurriculumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		AD4873CE27D93B9D005EF814 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		AD94291C280F7DAD00E21DB1 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		AD94291E280F834500E21DB1 /* Announcements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcements.swift; sourceTree = "<group>"; };
+		ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Black Maternal Health Crisis Info.pdf"; sourceTree = "<group>"; };
+		ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Prison Incarceration Statistics.pdf"; sourceTree = "<group>"; };
 		F95ADBE22803AF1400D3D07A /* CurriculumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +54,7 @@
 		AD47585927BF211B00268113 = {
 			isa = PBXGroup;
 			children = (
+				ADD4558A281C4C8300B1A5B4 /* Documents */,
 				AD47586527BF211B00268113 /* AppDelegate.swift */,
 				AD47586727BF211B00268113 /* SceneDelegate.swift */,
 				AD47586B27BF211B00268113 /* Main.storyboard */,
@@ -72,6 +77,15 @@
 				AD47586227BF211B00268113 /* malone-swift-app.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ADD4558A281C4C8300B1A5B4 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				ADFDEF442820D9B200150960 /* Black Maternal Health Crisis Info.pdf */,
+				ADFDEF452820D9B200150960 /* Prison Incarceration Statistics.pdf */,
+			);
+			path = Documents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFDEF472820D9B200150960 /* Prison Incarceration Statistics.pdf in Resources */,
 				AD47587227BF211C00268113 /* LaunchScreen.storyboard in Resources */,
+				ADFDEF462820D9B200150960 /* Black Maternal Health Crisis Info.pdf in Resources */,
 				AD47586F27BF211C00268113 /* Assets.xcassets in Resources */,
 				AD47586D27BF211B00268113 /* Main.storyboard in Resources */,
 			);
