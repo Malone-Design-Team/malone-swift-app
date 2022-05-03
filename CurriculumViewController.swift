@@ -92,9 +92,10 @@ class CurriculumViewController: UITableViewController {
         }
 
         cell.title.text = String(txtFilePaths[indexPath.row].dropLast(4))
-        cell.preview.image = img
         cell.preview.layer.cornerRadius = 5.0
         cell.preview.layer.masksToBounds = true
+        cell.preview.contentMode = .scaleAspectFill
+        cell.preview.image = img
         cell.title.lineBreakMode = .byWordWrapping
         
 
